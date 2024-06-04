@@ -26,13 +26,13 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-#knowledge {
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding: 1rem;
+    #knowledge {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
 }
 
 #title {
@@ -46,12 +46,49 @@ li {
     font-size: 1.17em;
 }
 
+#projects {
+    h3 {
+        text-align: center;
+    }
+
+    #project-box {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .project {
+        width: 20rem;
+        padding: 1rem;
+        border: 1px solid white;
+        border-radius: 5px;
+
+        h4 {
+            font-size: 1.17em;
+        }
+
+        p {
+            font-size: 1em;
+            padding: 1.2rem 0;
+        }
+    }
+} 
+
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     ul {
         display: inline-flex;
         gap: 1rem;
+    }
+
+    #cite {
+        color: gray;
+        padding: 2rem;
+        max-width: 30em;
     }
 }

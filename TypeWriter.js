@@ -5,7 +5,7 @@ const TypeWriter = {
         return data[title];
     },
 
-    write: function(txt, id, speed=70) {
+    write: function(txt, id, speed=60) {
         return new Promise((resolve, reject) => {
             const element = document.getElementById(id);
             for (let i = 0; i < txt.length; i++) {
