@@ -8,7 +8,7 @@ const App = {
         Theme.apply();
         
         this.theme.addEventListener('click', function () {
-            Theme.toggle(document.body);
+            Theme.toggle();
         });
 
         const arr = ['about', 'about1', 'about2', 'cite'];
