@@ -3,8 +3,8 @@ const Theme = {
     savedTheme: localStorage.getItem('theme'),
     darkPreference: window.matchMedia('(prefers-color-scheme: dark)').matches,
 
-    toggle: function () {
-        this.bodyClassList.toggle('dark-theme');
+    toggle: function (force=undefined) {
+        this.bodyClassList.toggle('dark-theme', force);
         this.save();
     },
 
@@ -15,7 +15,7 @@ const Theme = {
 
     apply: function () {
         if (this.savedTheme) {
-            this.bodyClassList.toggle('dark-theme', this.savedTheme === 'dark');
+            this.toggle(this.savedTheme === 'dark');
         } else if (this.darkPreference) {
             this.bodyClassList.add('dark-theme');
         }
