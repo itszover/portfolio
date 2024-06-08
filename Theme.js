@@ -1,9 +1,7 @@
 const Theme = {
     bodyClassList: document.body.classList,
-    savedTheme: localStorage.getItem('theme'),
-    darkPreference: window.matchMedia('(prefers-color-scheme: dark)').matches,
 
-    toggle: function (force=undefined) {
+    toggle: function (force) {
         this.bodyClassList.toggle('dark-theme', force);
         this.save();
     },
@@ -14,9 +12,12 @@ const Theme = {
     },
 
     apply: function () {
-        if (this.savedTheme) {
-            this.toggle(this.savedTheme === 'dark');
-        } else if (this.darkPreference) {
+        const savedTheme = localStorage.getItem('theme');
+        const darkPreference = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (savedTheme) {
+            this.toggle(savedTheme === 'dark');
+        } else if (darkPreference) {
             this.bodyClassList.add('dark-theme');
         }
     },
