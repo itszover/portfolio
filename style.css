@@ -46,7 +46,7 @@ li {
 
     #about-box {
         padding-top: 2rem;
-        font-size: 1.20em;
+        font-size: 1.26em;
     }
 
     #theme-toggle {
@@ -62,6 +62,10 @@ li {
         background-color: transparent;
 
         border: 1px solid var(--text-color);
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
