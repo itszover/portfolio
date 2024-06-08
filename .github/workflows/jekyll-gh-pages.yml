@@ -35,10 +35,10 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: Move to public directory
+      - name: Copy to public directory
         run: |
           mkdir -p ./public
-          mv ./_site/* ./public/
+          cp -r ./_site/* ./public/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
