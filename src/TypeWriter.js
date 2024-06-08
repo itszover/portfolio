@@ -1,6 +1,6 @@
 const TypeWriter = {
     getAllText: async function() {
-        const response = await fetch('./text.json');
+        const response = await fetch('../src/data/text.json');
         const data = await response.json();
         return data;
     },
