@@ -1,8 +1,8 @@
 const TypeWriter = {
-    getText: async function(title) {
+    getAllText: async function() {
         const response = await fetch('./text.json');
         const data = await response.json();
-        return data[title];
+        return data;
     },
 
     write: function(txt, id, speed=60) {
