@@ -30,7 +30,7 @@ a {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.26em;
     font-weight: bold;
 }
 
@@ -56,7 +56,7 @@ li {
         padding: 0.5rem;
 
         color: var(--text-color);
-        font-size: 1.17em;
+        font-size: 1.26em;
         font-weight: bold;
 
         background-color: transparent;
@@ -74,7 +74,7 @@ li {
     align-items: center;
     justify-content: center;
 
-    font-size: 1.1rem;
+    font-size: 1.26em;
 
     #knowledge {
         display: grid; 
@@ -90,7 +90,7 @@ li {
     flex-direction: column;
 
     h3 {
-        font-size: 1.5em;
+        font-size: 1.26em;
     }
 
     #project-box {
@@ -107,7 +107,7 @@ li {
         border-radius: 5px;
 
         h4 {
-            font-size: 1.17em;
+            font-size: 1.26em;
         }
 
         p {
