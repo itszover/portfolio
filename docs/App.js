@@ -1,11 +1,11 @@
-import TypeWriter from './modules/TypeWriter.js';
+import Text from './modules/Text.js';
 import Theme from './modules/Theme.js';
 import Project from './modules/Project.js';
 
 const App = {
     init: async function () {
         Theme.apply();
-        Project.renderProjects();
+        Project.render();
         
         const themeToggle = document.querySelector('#theme-toggle');
 
@@ -13,14 +13,13 @@ const App = {
             Theme.toggle();
         });
 
-        const texts = await TypeWriter.getAllText();
+        const texts = await Text.getAll();
 
         for (const key in texts) {
             if (Object.hasOwnProperty.call(texts, key)) {
-                await TypeWriter.write(texts[key], key);
+                await Text.write(texts[key], key);
             }
         }
-
     },    
 };
 

@@ -1,16 +1,16 @@
 const Project = {
-    getAllProjects: async function() {
+    getAll: async function() {
         const response = await fetch('./data/projects.json');
 
         if (!response.ok) {
             throw new Error(`An error has occured: ${response.status}`);
         }
-        const data = await response.json();
-        return data;
+         
+        return response.json();
     },
 
-    renderProjects: async function() {
-        const projects = await this.getAllProjects();
+    render: async function() {
+        const projects = await this.getAll();
         let html = '';
 
         for (const key in projects) {

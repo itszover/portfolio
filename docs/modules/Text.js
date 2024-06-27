@@ -1,5 +1,5 @@
-const TypeWriter = {
-    getAllText: async function() {
+const Text = {
+    getAll: async function() {
         const response = await fetch('./data/text.json');
         const data = await response.json();
         return data;
@@ -21,4 +21,4 @@ const TypeWriter = {
     }
 }
 
-export default TypeWriter;
+export default Text;
