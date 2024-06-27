@@ -1,6 +1,6 @@
 const Project = {
     getAllProjects: async function() {
-        const response = await fetch('./../data/projects.json');
+        const response = await fetch('./data/projects.json');
 
         if (!response.ok) {
             throw new Error(`An error has occured: ${response.status}`);

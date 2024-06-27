@@ -1,6 +1,6 @@
-import TypeWriter from '../modules/TypeWriter.js';
-import Theme from '../modules/Theme.js';
-import Project from '../modules/Project.js';
+import TypeWriter from './modules/TypeWriter.js';
+import Theme from './modules/Theme.js';
+import Project from './modules/Project.js';
 
 const App = {
     init: async function () {
