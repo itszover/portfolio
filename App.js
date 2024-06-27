@@ -1,9 +1,11 @@
 import TypeWriter from './TypeWriter.js';
 import Theme from './Theme.js';
+import Project from './Project.js';
 
 const App = {
     init: async function () {
         Theme.apply();
+        Project.renderProjects();
         
         const themeToggle = document.querySelector('#theme-toggle');
 
@@ -18,6 +20,7 @@ const App = {
                 await TypeWriter.write(texts[key], key);
             }
         }
+
     },    
 };
 
