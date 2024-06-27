@@ -20,7 +20,7 @@ const Project = {
                 <div class="project">
                     <h4>${project.name}</h4>
                     <p>${project.description}</p>
-                    <span><a href="${project.url}" target="_blank" rel="noopener noreferrer">${project.link}</a></span>
+                    <span><a href="${project.url}" target="_blank" rel="noopener noreferrer">${project.shortURL}</a></span>
                 </div>
             `; 
             }
