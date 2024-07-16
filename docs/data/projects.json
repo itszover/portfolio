@@ -2,28 +2,28 @@
     "1": {
         "name": "Query Widget",
         "description": "Widget Query personalizado para atender a uma demanda para um aplicativo específico no ArcGis Portal",
-        "url": "https://github.com/itszover/QueryWidget",
-        "shortURL": "itszover/QueryWidget"
+        "url": "https://github.com/itszover/query-widget",
+        "shortURL": "itszover/query-widget"
     },
 
     "2": {
         "name": "Amazon Products Scraper",
         "description": "A web application that scrap data from amazon products search result.",
-        "url": "https://github.com/itszover/Amazon-Scraper",
-        "shortURL": "itszover/Amazon-Scraper"
+        "url": "https://github.com/itszover/amazon-scraper",
+        "shortURL": "itszover/amazon-scraper"
     },
 
     "3": {
         "name": "CRUD-MVC",
         "description": "CRUD básico feito utilizando o padrão de projeto MVC para aprimorar o entendimento de padrões de projeto e implantação de sites.",
-        "url": "https://github.com/itszover/CRUD-MVC",
-        "shortURL": "itszover/CRUD-MVC"
+        "url": "https://github.com/itszover/crud-mvc",
+        "shortURL": "itszover/crud-mvc"
     },
 
     "4": {
         "name": "YGO-Card-Searcher",
         "description": "Projeto da disciplina Programação Web Fullstack, consumindo uma API em uma SPA com AJAX.",
-        "url": "https://github.com/itszover/YGO-Card-Searcher",
-        "shortURL": "itszover/YGO-Card-Searcher"
+        "url": "https://github.com/itszover/ygo-card-searcher",
+        "shortURL": "itszover/ygo-card-searcher"
     }
 }
