@@ -1,2 +1,4 @@
-# 🛠️ WIP
-# > [itszover/portifolio](https://itszover.github.io/portifolio/public)
+# 🛠️ W.I.P.
+
+## 📄 GitHub Pages
+* [itszover/portifolio](https://itszover.github.io/portfolio/)
